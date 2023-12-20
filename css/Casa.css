@@ -1,0 +1,120 @@
+ .u-section-1 {
+  background-image: url("../images/Untitled133.png");
+  background-position: 50% 50%;
+}
+
+.u-section-1 .u-sheet-1 {
+  min-height: 576px;
+}
+
+.u-section-1 .u-image-1 {
+  width: 476px;
+  height: 300px;
+  margin: 20px auto 0;
+}
+
+.u-section-1 .u-text-1 {
+  font-family: "Alex Brush";
+  font-size: 4.5rem;
+  line-height: 0.8;
+  margin: 20px 20px 0;
+}
+
+.u-section-1 .u-text-2 {
+  font-size: 6rem;
+  margin: -22px 20px 0;
+}
+
+.u-section-1 .u-text-3 {
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  font-size: 3rem;
+  line-height: 0.8;
+  margin: 0 20px;
+}
+
+.u-section-1 .u-text-4 {
+  width: 384px;
+  margin: 22px auto 55px;
+}
+
+@media (max-width: 1199px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 475px;
+  }
+
+  .u-section-1 .u-text-1 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .u-section-1 .u-text-2 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .u-section-1 .u-text-3 {
+    margin-left: 0;
+    margin-right: 0;
+    line-height: 3rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 364px;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 273px;
+  }
+
+  .u-section-1 .u-text-1 {
+    margin-top: 71px;
+  }
+
+  .u-section-1 .u-text-2 {
+    margin-top: -11px;
+  }
+}
+
+@media (max-width: 575px) {
+   .u-section-1 {
+    background-position: 28.86% 50%;
+  }
+
+  .u-section-1 .u-sheet-1 {
+    min-height: 86px;
+  }
+
+  .u-section-1 .u-image-1 {
+    width: 340px;
+    height: 214px;
+  }
+
+  .u-section-1 .u-text-1 {
+    margin-top: 53px;
+  }
+
+  .u-section-1 .u-text-2 {
+    font-size: 3.75rem;
+    margin-top: -13px;
+  }
+
+  .u-section-1 .u-text-3 {
+    font-size: 1.875rem;
+  }
+
+  .u-section-1 .u-text-4 {
+    width: 340px;
+  }
+}
+
+.custom-input{
+  width: 230px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
