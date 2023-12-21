@@ -41,7 +41,7 @@
         <div class="u-clearfix u-sheet u-sheet-1">
           <img class="u-image u-image-default u-image-1" id="visor" style="width: 20rem; height: 20rem;" src="" alt="" data-image-width="1280" data-image-height="806">
           <h3 class="u-custom-font u-text u-text-body-alt-color u-text-1" id="saludo">Super</h3>
-          <h2 id="saludo" class="u-custom-font u-font-roboto-condensed u-text u-text-body-alt-color u-text-3"></h2>
+          <h2 id="saludo" class="u-custom-font u-font-roboto-condensed u-text u-text-body-alt-color u-text-3 text-uppercase"></h2>
           <h1 class="u-custom-font u-font-roboto-condensed u-text u-text-body-alt-color u-text-2">Felíz navidad!!</h1>
           
           <br>
@@ -110,16 +110,14 @@
           body: parametros
         })
         .then(result => result.json())
-        .then(data =>{
-          console.log(data);
-  
+        .then(data =>{-
           
            if(data){
             saludo.innerHTML = "";
             deseo.innerHTML = "";
             mensaje.innerHTML = "";
   
-            saludo.innerHTML = `<h1>Hola ${data.nombres}</h1>`;
+            saludo.innerHTML = `Hola ${data.nombres}`;
             deseo.innerHTML= data.deseo;
             mensaje.innerHTML = data.mensaje;
             $("#visor").setAttribute("src",`./images/${data.imagen}.jpg`);

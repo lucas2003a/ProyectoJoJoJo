@@ -106,8 +106,6 @@
   
       function validar(){
   
-        console.log("en la funcion");
-  
         if($("#nombre").value == ""){
           mensError("Escriba en la caja de texto","Campo vacío");
         }else{
@@ -119,15 +117,30 @@
       }
   
       function buscar(nom){
-        window.location.href= `./saludo2.html?nombre=${nom}`;
+        window.location.href= `./saludo.php?nombre=${nom}`;
       }
   
       
       $("#buscar").addEventListener("click",()=>{
         validar();
       });
-  
-      reiniciar();
+
+      window.addEventListener("pageshow",(event)=>{
+
+        reiniciar();
+      });
+
+      $("#nombre").addEventListener("keydown",(event)=>{
+        /*console.log("La tecla es(event.key): ",event.key);          //valor de la tecla presionada(nombre de la tecla)
+        console.log("La tecla es(event.code): ",event.code);        //valor físico de la tecla
+        console.log("La tecla es(event.keyCode): ",event.keyCode);  //codigo numerico de la tecla presionada(desconsejado)
+        */
+       if(event.key == "Enter"){
+          event.preventDefault();
+          validar();
+        }
+      });
+
     });
     </script>
   </body>
