@@ -97,7 +97,7 @@
       const deseo = $("#deseo");
       const mensaje = $("#mensaje");
   
-      console.log(nombreURL);
+      //console.log(nombreURL);
   
       (function(nombre){
         const parametros = new FormData();
@@ -110,7 +110,7 @@
           body: parametros
         })
         .then(result => result.json())
-        .then(data =>{-
+        .then(data =>{
           
            if(data){
             saludo.innerHTML = "";
@@ -121,8 +121,6 @@
             deseo.innerHTML= data.deseo;
             mensaje.innerHTML = data.mensaje;
             $("#visor").setAttribute("src",`./images/${data.imagen}.jpg`);
-  
-            console.log(data.nombre)
           } 
         })
         .catch(e =>{

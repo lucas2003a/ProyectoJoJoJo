@@ -27,7 +27,7 @@
 
 .u-section-1 .u-text-3 {
   text-transform: uppercase;
-  letter-spacing: 6px;
+  letter-spacing: 3px;
   font-size: 3rem;
   line-height: 0.8;
   margin: 0 20px;
@@ -36,6 +36,13 @@
 .u-section-1 .u-text-4 {
   width: 384px;
   margin: 22px auto 55px;
+}
+
+.form-person{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 80%);    
 }
 
 @media (max-width: 1199px) {
@@ -83,6 +90,7 @@
 @media (max-width: 575px) {
    .u-section-1 {
     background-position: 28.86% 50%;
+    min-height: 450px;
   }
 
   .u-section-1 .u-sheet-1 {
@@ -96,10 +104,11 @@
 
   .u-section-1 .u-text-1 {
     margin-top: 53px;
+    font-size: 3rem;
   }
 
   .u-section-1 .u-text-2 {
-    font-size: 3.75rem;
+    font-size: 3rem;
     margin-top: -13px;
   }
 
@@ -108,7 +117,14 @@
   }
 
   .u-section-1 .u-text-4 {
-    width: 340px;
+    width: 300px;
+  }
+
+  .form-person{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);    
   }
 }
 

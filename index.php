@@ -43,13 +43,13 @@
       <section class="u-align-center u-clearfix u-image u-section-1" id="carousel_b15e">
         <div class="u-clearfix u-sheet u-sheet-1">
           <div>
-            <form action=""id="form-persona">
+            <form class="form-person" action=""id="form-persona">
               <div class="mb-2">
-                <h1 class="text-white"><strong>Ingresa tu nombre:</strong></h1>
+                <h2 class="text-white"><strong>Ingresa tu nombre:</strong></h2>
                 <input id="nombre" type="text" class="form-control custom-input" placeholder="SOLO TU PRIMER NOMBRE">
               </div>
+              <button id="buscar" class="btn btn-success mt-5">Buscar</button>
             </form>
-            <button id="buscar" class="btn btn-success mt-5">Buscar</button>
           </div>
         </div>
       </section>
@@ -120,15 +120,16 @@
         window.location.href= `./saludo.php?nombre=${nom}`;
       }
   
-      
-      $("#buscar").addEventListener("click",()=>{
+      //El evento pageshow sirve para cuando se quiera volver a mostrar la página
+      window.addEventListener("pageshow",(event)=>{ 
+        reiniciar();
+      });
+
+      $("#buscar").addEventListener("click",(event)=>{
+        event.preventDefault();
         validar();
       });
 
-      window.addEventListener("pageshow",(event)=>{
-
-        reiniciar();
-      });
 
       $("#nombre").addEventListener("keydown",(event)=>{
         /*console.log("La tecla es(event.key): ",event.key);          //valor de la tecla presionada(nombre de la tecla)
